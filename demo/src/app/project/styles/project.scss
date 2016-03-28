@@ -1,0 +1,61 @@
+.main-view {
+  background-color: $light-panel-color;
+  position: absolute;
+  top: 80px;
+  bottom: 0;
+  left: 275px;
+  right: 0;
+  overflow: auto;
+  height: 1px;
+  min-height: 100%;
+  padding-bottom: 30px;
+
+  &.sidenav-hidden {
+    top: 40px;
+    left: 0;
+  }
+}
+
+.feature-view {
+  padding: 30px;
+}
+
+@media screen and (max-width: 640px) {
+  .main-view {
+    top: 60px;
+    left: 0;
+  }
+}
+
+a {
+  cursor: pointer;
+  color: $secondary-text-color;
+}
+
+.success {
+  color: $success-text-color;
+}
+
+.danger {
+  color: $btn-danger;
+}
+
+.btn {
+  font-size: 12px;
+
+  .icon {
+    font-size: 12px;
+  }
+}
+
+.no-records-message {
+  position: absolute;
+  text-align: center;
+  right: 10%;
+  height: 200px;
+  top: 50%;
+  margin-top: -100px;
+  font-size: 20px;
+  left: 10%;
+  color: rgba($primary-text-color, 0.7);
+}

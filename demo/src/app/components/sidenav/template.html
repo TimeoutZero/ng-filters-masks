@@ -1,0 +1,31 @@
+<div class="sidenav-backdrop" ng-class='{open : open}' ng-click='open = false'></div>
+
+<div class="sidenav" role="navigation" ng-class='{open : open}'>
+  <div class="header">
+    <span class="icon-adm-logo"></span>
+    <span class='title' ng-bind="'SIDENAV.HEADER' | translate"></span>
+    <span class='company' ng-bind="$root.company.companyName || 'companyName'"></span>
+  </div>
+
+  <div class="features">
+    <ul>
+      <li ui-sref-active="active" class='feature' ng-repeat="feature in attrs.features track by $index">
+        <a ui-sref="{{feature.route}}" ui-sref-opts="{reload: true}" class="no-select">
+          <span class='icon' ng-class='feature.icon'></span>
+          <span ng-bind="'ENTITY.' + feature.name | translate:{plural: feature.plural || 'many'}:'messageformat'"></span>
+          <span
+            ng-if="feature.hasOldName"
+            class="old-name"
+            ng-bind="'(' + ('ENTITY.OLD.' + feature.name | translate:{plural: 'many'}:'messageformat') + ')'"></span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="topnav">
+  <div class="header">
+    <span class="icon glyphicon glyphicon-menu-hamburger" ng-click='open = !open' tabindex='0'></span>
+    <span class='title' ng-bind="'SIDENAV.HEADER' | translate"></span>
+  </div>
+</div>

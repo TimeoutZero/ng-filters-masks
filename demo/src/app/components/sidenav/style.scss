@@ -1,0 +1,153 @@
+.sidenav {
+  width: 275px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 1px;
+  min-height: 100%;
+  background-color: $primary-color;
+  color: $secondary-color;
+  z-index: 3;
+  transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.2s;
+
+  .header {
+    height: 50px;
+    width: 210px;
+    margin: 37px auto;
+
+    .icon-adm-logo {
+      float: left;
+      font-size: 51px;
+      margin-right: 14px;
+    }
+
+    .title {
+      font-size: 21px;
+      float: left;
+      font-weight: 200;
+    }
+
+    .company {
+      font-size: 16px;
+      float: left;
+      opacity: 0.5;
+      filter: alpha(opacity=50);
+      font-weight: 200;
+    }
+  }
+
+  .features {
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      cursor: pointer;
+      font-weight: 300;
+      margin: 10px 0;
+
+      a {
+        color: #fff;
+        text-decoration: none;
+        padding: 0px 28px;
+        display: block;
+        line-height: 40px;
+      }
+
+      .old-name {
+        display: block;
+        font-size: 12px;
+        line-height: 10px;
+        padding-bottom: 4px;
+        color: rgba(255, 255, 255, 0.68);
+        margin-left: 28px;
+        margin-top: -8px;
+      }
+
+      .icon {
+        padding-right: 8px;
+        font-size: 16px;
+      }
+
+      &.active {
+        background-color: $selected-item-bg-color;
+      }
+    }
+  }
+
+  // Admin Icons
+  span[class*="icon-adm-"] {
+    color: #FFFFFF;
+  }
+}
+
+
+.topnav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  height: 60px;
+  width: 100%;
+  background-color: $primary-color;
+  color: $secondary-color;
+
+  .header {
+    height: 60px;
+    width: 100%;
+    line-height: 60px;
+
+    .icon {
+      cursor: pointer;
+      font-size: 22px;
+      margin: 0 14px;
+      top: 2px;
+    }
+
+    .title {
+      font-size: 22px;
+      font-weight: 200;
+    }
+
+    .company {
+      font-size: 16px;
+      opacity: 0.5;
+      filter: alpha(opacity=50);
+      font-weight: 200;
+    }
+  }
+}
+
+.sidenav-backdrop {
+  display: none;
+  position: absolute;
+  right:0;
+  top:0;
+  bottom:0;
+  cursor: pointer;
+  z-index: 2;
+  background-color: rgba(0,0,0,0.2);
+  left: 0;
+}
+
+@media screen and (max-width: 640px) {
+  .sidenav {
+    left: -275px;
+  }
+  .sidenav.open {
+    left: 0px;
+  }
+
+  .sidenav-backdrop.open {
+    display: block;
+  }
+
+
+
+
+  .topnav {
+    display: block;
+  }
+}

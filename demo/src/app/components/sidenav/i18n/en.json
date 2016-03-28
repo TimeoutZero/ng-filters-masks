@@ -1,0 +1,15 @@
+{
+  "SIDENAV": {
+    "HEADER"        : "Administration",
+    "NATURES"       : "Document types",
+    "PROPERTIES"    : "Properties",
+    "PROFILE"       : "User Groups",
+    "NATURE_GROUPS" : "Related documents",
+    "USERS"         : "Users",
+    "WORKFLOW"      : "Workflow",
+    "SCANNERS"      : "Scan assistant",
+    "PLANS"         : "Plans",
+    "TRASH"         : "Trash",
+    "HELP"          : "Help"
+  }
+}
