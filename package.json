@@ -1,0 +1,21 @@
+{
+  "name": "ng-filters-masks-br",
+  "version": "0.0.1",
+  "dependencies": {
+    "basebuild-component": "0.0.13"
+  },
+  "scripts": {
+    "test": "gulp test",
+    "install": "npm install; bower install;"
+  },
+  "devDependencies": {
+    "gulp": "~3.8.10",
+    "gulp-util": "~3.0.2",
+    "karma": "0.13",
+    "chai": "^3.5.0",
+    "sinon": "^1.17.3"
+  },
+  "engines": {
+    "node": ">=4.2.2"
+  }
+}

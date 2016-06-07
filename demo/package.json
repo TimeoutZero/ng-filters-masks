@@ -1,6 +1,5 @@
 {
-  "name": "ngFiltersMasksDemo",
-  "private": "true",
+  "name": "ng-filters-masks-br-demo",
   "version": "0.0.1",
   "dependencies": {
     "basebuild-angular": "0.13.1"
