@@ -2,7 +2,7 @@
   "name": "ng-filters-masks-br",
   "version": "0.0.1",
   "dependencies": {
-    "basebuild-component": "0.0.13"
+    "basebuild-component": "0.1.6"
   },
   "scripts": {
     "test": "gulp test",
