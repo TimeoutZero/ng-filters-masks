@@ -1,23 +1,15 @@
 .main-view {
   background-color: $light-panel-color;
   position: absolute;
-  top: 80px;
+  top: 0;
   bottom: 0;
-  left: 275px;
+  left: 0;
   right: 0;
   overflow: auto;
   height: 1px;
   min-height: 100%;
   padding-bottom: 30px;
 
-  &.sidenav-hidden {
-    top: 40px;
-    left: 0;
-  }
-}
-
-.feature-view {
-  padding: 30px;
 }
 
 @media screen and (max-width: 640px) {
