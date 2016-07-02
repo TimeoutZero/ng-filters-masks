@@ -1,4 +1,7 @@
-angular.module('ngFiltersMasksBr.filters')
+
+
+angular
+  .module('ngFiltersMasksBr.filters')
   .filter('cep', cepFilter);
 
 function cepFilter() {
