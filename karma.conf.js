@@ -54,8 +54,7 @@ module.exports = function(config) {
     ],
 
     preprocessors: {
-      'src/**/*.html': ['ng-html2js'],
-      'builds/dev/serve/{app,components}/**/!(*spec|*mock).js' : ['coverage']
+      'src/**/*.html': ['ng-html2js']
     },
 
     // generates the coverage
@@ -86,6 +85,9 @@ module.exports = function(config) {
   };
 
 
+  if(!config.suppressCoverage){
+    configuration.preprocessors['builds/dev/serve/{app,components}/**/!(*spec|*mock).js'] = ['coverage'];
+  }
 
   // This block is needed to execute Chrome on Travis
   // If you ever plan to use Chrome and Travis, you can keep it
