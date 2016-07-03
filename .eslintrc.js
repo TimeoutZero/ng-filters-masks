@@ -29,6 +29,7 @@ module.exports = {
     ]
   },
   "globals" : {
-    "console" : true
+    "angular" : true,
+    "inject" : true
   }
 };
