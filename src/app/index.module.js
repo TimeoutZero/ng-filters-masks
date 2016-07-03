@@ -15,7 +15,6 @@ angular.module("ngFiltersMasksBr.constants"   , ["ngFiltersMasksBr.vendors"]);
 angular.module("ngFiltersMasksBr.services"    , ["ngFiltersMasksBr.vendors"]);
 angular.module("ngFiltersMasksBr.directives"  , ["ngFiltersMasksBr.vendors"]);
 angular.module("ngFiltersMasksBr.mocks"       , ["ngFiltersMasksBr.vendors"]);
-angular.module("ngFiltersMasksBr.i18n"        , ["ngFiltersMasksBr.vendors"]);
 angular.module("ngFiltersMasksBr.configs"     , ["ngFiltersMasksBr.vendors"]);
 angular.module("ngFiltersMasksBr.providers"   , ["ngFiltersMasksBr.vendors"]);
 
