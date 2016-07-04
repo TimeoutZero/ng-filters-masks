@@ -1,5 +1,13 @@
 {
   "name": "ng-filters-masks-br",
+  "description": "Filtros e máscaras brasileiras para AngularJs",
+  "authors": [
+    "Carlos Henrique <carloshpds@gmail.com>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/TimeoutZero/ng-filters-masks-br.git"
+  },
   "main": [
     "builds/release"
   ],
@@ -18,5 +26,27 @@
     "angular-sanitize": "1.4.6"
   },
   "overrides": {
-  }
+  },
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "angular",
+    "ng",
+    "mask",
+    "filter",
+    "ng-filters-masks-br",
+    "ng-filters",
+    "br"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "license" : "MIT"
 }
