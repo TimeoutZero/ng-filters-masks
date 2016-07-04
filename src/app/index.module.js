@@ -3,7 +3,7 @@
 // =============================================
 // Vendors
 // =============================================
-angular.module("ngFiltersMasksBr.vendors", []);
+angular.module("ngFiltersMasksBr.vendors", ['ngSanitize']);
 
 // =============================================
 // Modules
