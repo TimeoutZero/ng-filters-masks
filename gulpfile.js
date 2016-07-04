@@ -1,7 +1,26 @@
 
 var gutil = require('gulp-util');
-
+var ngAnnotatePlugin = require('ng-annotate-webpack-plugin');
 var bbComponentOptions = {};
+
+bbComponentOptions.modules = {
+  unitTests: {
+    isEnabled: false
+  },
+  bundler: {
+    webpackConfig: {
+      externals: {
+        'angular' : 'angular'
+      },
+      plugins: [
+        new ngAnnotatePlugin({
+          add: true
+        })
+      ]
+    }
+  }
+};
+
 var bbAngularOptions = {
   modulesData: {
     unitTests: {
@@ -12,7 +31,7 @@ var bbAngularOptions = {
   }
 };
 
-if(gutil.env._[0] === 'bundle'){
+if(gutil.env._[0] === 'bundle' || gutil.env._[0] === 'build'){
   require('basebuild-component')(bbComponentOptions);
 } else {
   require('basebuild-angular')(bbAngularOptions);
