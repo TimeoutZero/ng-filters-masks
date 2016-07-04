@@ -14,7 +14,7 @@ angular.module "ngFiltersMasks.vendors", [
   "pascalprecht.translate"
   "agGrid"
   "matchMedia"
-  'brasil.filters'
+  'ngFiltersMasksBr'
 ]
 
 # =============================================
