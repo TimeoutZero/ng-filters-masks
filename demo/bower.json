@@ -26,7 +26,8 @@
     "messageformat": "0.2.2",
     "moment": "2.10.6",
     "ag-grid": "2.3.5",
-    "underscore-string": "epeli/underscore.string#3.2.1"
+    "underscore-string": "epeli/underscore.string#3.2.1",
+    "ng-filters-masks-br": "*"
   },
   "resolutions": {
     "jquery": "1.11.1",
