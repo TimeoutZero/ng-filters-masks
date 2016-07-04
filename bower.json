@@ -9,7 +9,7 @@
     "url": "git://github.com/TimeoutZero/ng-filters-masks-br.git"
   },
   "main": [
-    "builds/release"
+    "builds/release/ngFiltersMasksBr/ngFiltersMasksBr.js"
   ],
   "dependencies": {
     "angular": "1.4.7",
